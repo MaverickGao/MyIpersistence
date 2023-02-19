@@ -1,0 +1,10 @@
+<mapper namespace="com.gzh.dao.IUserDao">
+    <!-- sel的唯一标识以：namespace.id来组成 -->
+    <select id="selectList" resultType="com.gzh.pojo.User">
+        select * from user
+    </select>
+
+    <select id="selectOne" resultType="com.gzh.pojo.User" paramterType="com.gzh.pojo.User">
+        select * from user where id = #{id} and user_name = #{userName}
+    </select>
+</mapper>

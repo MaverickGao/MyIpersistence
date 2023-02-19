@@ -1,0 +1,11 @@
+<configuration>
+    <dataSource>
+        <property name="driverClass" value="com.mysql.cj.jdbc.Driver"/>
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/gaozhiheng_test?characterEncoding=utf-8&amp;serverTimezone=UTC"/>
+        <property name="username" value="root"/>
+        <property name="password" value="123456"/>
+    </dataSource>
+
+    <!-- 指向mapper.xml的全路径 -->
+    <mapper resource="userMapper.xml"/>
+</configuration>
